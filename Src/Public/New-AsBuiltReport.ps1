@@ -361,7 +361,7 @@ function New-AsBuiltReport {
                     & "Invoke-$($ReportModuleName)" -Target $Target -Credential $Credential -Verbose -StylePath $true
                 }
                 elseif ($Token) {
-                    & "Invoke-$($ReportModuleName)" -Target $Target -Token $Token -Verbose -StylePath $true
+                    & "Invoke-$($ReportModuleName)" -Target $Target -Token $Token -Verbose #-StylePath $true
                 }
                 elseif ($MFA) {
                     & "Invoke-$($ReportModuleName)" -Target $Target -MFA -Verbose -StylePath $true
